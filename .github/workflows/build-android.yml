@@ -1,4 +1,4 @@
-name: Build Victoria Launcher APK
+name: Build Victoria Launcher Release APK
 on:
   workflow_dispatch: # 允许手动触发构建（在Actions页面点按钮运行）
   push:
@@ -21,11 +21,19 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build debug APK
-        run: ./gradlew assembleDebug
+      # 给release启用debug签名，解决release必须签名的报错
+      - name: Patch build.gradle to use debug signing for release
+        run: |
+          sed -i '/buildTypes {/a \
+              release { \
+                  signingConfig signingConfigs.debug \
+              }' app/build.gradle
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: victoria-hacked-zh-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: victoria-hacked-zh-release-apk
+          path: app/build/outputs/apk/release/app-release.apk
