@@ -1,1 +1,44 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Victoria Launcher</string>
+    <string name="settings">设置</string>
+    <string name="general">通用</string>
+    <string name="appearance">外观</string>
+    <string name="icons">图标</string>
+    <string name="gestures">手势</string>
+    <string name="about">关于</string>
+    <string name="search_hint">搜索应用</string>
+    <string name="hide_apps">隐藏应用</string>
+    <string name="hidden_apps">已隐藏应用</string>
+    <string name="select_hidden_apps">选择要隐藏的应用</string>
+    <string name="show_search_bar">显示搜索栏</string>
+    <string name="show_letter_index">显示字母索引条</string>
+    <string name="dark_theme">深色主题</string>
+    <string name="light_theme">浅色主题</string>
+    <string name="system_theme">跟随系统</string>
+    <string name="icon_pack">图标包</string>
+    <string name="select_icon_pack">选择图标包</string>
+    <string name="icon_size">图标大小</string>
+    <string name="label_size">文字大小</string>
+    <string name="click_to_open">点击打开应用</string>
+    <string name="long_press_menu">长按打开菜单</string>
+    <string name="uninstall">卸载</string>
+    <string name="app_info">应用信息</string>
+    <string name="add_to_favorites">添加到收藏</string>
+    <string name="remove_from_favorites">从收藏移除</string>
+    <string name="favorites">收藏</string>
+    <string name="reset_settings">重置全部设置</string>
+    <string name="reset_confirm">确定重置所有设置吗？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="version">版本</string>
+    <string name="source_code">源代码</string>
+    <string name="licence">许可证</string>
+    <string name="auto_collapse_favorites">自动折叠收藏栏</string>
+    <string name="vibrate_on_tap">点击震动反馈</string>
+    <string name="transparency">透明度</string>
+    <string name="background">背景</string>
+    <string name="wallpaper">壁纸</string>
+</resources>
